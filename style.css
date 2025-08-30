@@ -1,0 +1,157 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    background-color: rgb(254, 241, 225);
+    user-select: none;
+    font-family: "Poppins", sans-serif;
+}
+
+.Heading{
+    font-family: "Poppins", sans-serif;
+    color: white;
+    font-size: 19px;
+    padding: 0 30px;
+    letter-spacing: 0.9;
+}
+
+
+.calculator{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    width: 340px;
+    max-height: 93vh;
+    background-color: #1D2129;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.inputs-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    padding: 10px 0px;
+}
+
+.display{
+    background-color: transparent;
+    color: rgb(145, 143, 143);
+    text-align: end;
+    font-size: 28px;
+    padding: 0px 30px;
+    border: none;
+    width: 82%;
+    letter-spacing: 2px;
+}
+
+.display:focus{
+    outline: none;
+}
+
+.innerInputs{
+    display: flex;
+    align-items: center;
+}
+
+#equal{
+    background-color: transparent;
+    color: white;
+    font-size: 30px;
+    border: none;
+    width: 20px;
+    padding: 0px 0px 0px 30px;
+    margin: 0;
+}
+
+#equal{
+    outline: none;
+}
+
+#result{
+    background-color: transparent;
+    color: white;
+    text-align: end;
+    border: none;
+    font-size: 55px;
+    padding: 0px 30px;
+    width: 100%;
+    letter-spacing: 2px;
+}
+
+#result:focus{
+    outline: none;
+}
+
+input::selection{
+    background-color: transparent;
+} 
+
+
+
+.bottom-container{
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+    background-color: #2b2e34;
+    padding: 30px;
+}
+
+.buttons{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    gap: 15px;
+}
+
+button{
+    background-color: #1D2129;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    height: 54px;
+    width: 57px;
+    padding: 0;
+    border-radius: 19px;
+    border: none;
+    cursor: pointer;
+    transition: transform 500ms;  
+    transition-timing-function: cubic-bezier(.75, -3, .25, 4);  
+}
+
+button:active{
+    transform: scale(1.1);
+}
+
+.Zero{
+    grid-column: span 2;
+    width: 100%;
+}
+
+.operator-color{
+    background-color: #35C273;
+}
+
+.operator-color:active{
+    background-color: #239e58;
+}
+
+.owner{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.owner p{
+    margin: 0;
+    margin-top: 10px;
+}
+
+.owner img{
+    transform: rotate(-15deg);
+}
+
